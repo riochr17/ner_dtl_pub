@@ -18,7 +18,7 @@ class NERFeatureExtractor:
 		self.iob_predictor = iob_predictor
 		self.stemmer = StemmerFactory().create_stemmer()
 		self.TAGGER3 = CRFTagger()
-		self.TAGGER3.set_model_file('../ists/dataset/all_indo_man_tag_corpus_model.crf.tagger')
+		self.TAGGER3.set_model_file('all_indo_man_tag_corpus_model.crf.tagger')
 		self.label_words = self.read_label_file('label-words.txt')
 		self.label_posses = self.read_label_file('label-posses.txt')
 		self.label_lemmas = self.read_label_file('label-lemmas.txt')
